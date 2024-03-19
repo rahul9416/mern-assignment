@@ -19,10 +19,10 @@ const userSchema = new Schema({
         required: true,
         unique:true,
     },
-    password: {
+    mobileNumber: {
         type: String,
         required: true,
-        min:8,
+        length: 10,
     },
     projectDetail: {
         type: String,
